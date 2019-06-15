@@ -14,6 +14,7 @@
 		04C5207E22B5228E00BE2D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C5207C22B5228E00BE2D92 /* LaunchScreen.storyboard */; };
 		04C5208622B5271500BE2D92 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5208522B5271500BE2D92 /* Concentration.swift */; };
 		04C5208822B5273000BE2D92 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5208722B5273000BE2D92 /* Card.swift */; };
+		04C5208A22B56F2C00BE2D92 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5208922B56F2C00BE2D92 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		04C5207F22B5228E00BE2D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04C5208522B5271500BE2D92 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		04C5208722B5273000BE2D92 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		04C5208922B56F2C00BE2D92 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				04C5207522B5228E00BE2D92 /* ViewController.swift */,
 				04C5207722B5228E00BE2D92 /* Main.storyboard */,
+				04C5208922B56F2C00BE2D92 /* Theme.swift */,
 				04C5207A22B5228E00BE2D92 /* Assets.xcassets */,
 				04C5207322B5228E00BE2D92 /* AppDelegate.swift */,
 				04C5207C22B5228E00BE2D92 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			files = (
 				04C5207622B5228E00BE2D92 /* ViewController.swift in Sources */,
 				04C5207422B5228E00BE2D92 /* AppDelegate.swift in Sources */,
+				04C5208A22B56F2C00BE2D92 /* Theme.swift in Sources */,
 				04C5208622B5271500BE2D92 /* Concentration.swift in Sources */,
 				04C5208822B5273000BE2D92 /* Card.swift in Sources */,
 			);
