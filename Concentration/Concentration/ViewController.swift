@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         flipCounter = 0
         model = Concentration(numberOfPairs: (cardList.count) / 2)
         updateCards()
+        emojis = ["🇦🇺", "🇦🇹", "🇦🇿", "🇧🇸", "🇧🇭", "🇧🇩", "🇧🇧", "🇧🇾", "🇧🇪", "🇧🇷", "🇨🇦", "🇨🇱", "🇨🇮", "🇩🇰", "🇪🇬", "🇫🇴", "🇫🇮", "🇸🇻", "🇪🇺", "🇩🇪", "🇮🇸", "🇯🇲", "🇯🇵", "🇱🇻", "🇳🇱", "🇳🇴"]
     }
     
     func updateCards() {
@@ -63,6 +64,8 @@ class ViewController: UIViewController {
         
         if model.isWon {
             winLabel.isHidden = false
+        } else {
+            winLabel.isHidden = true
         }
     }
     

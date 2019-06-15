@@ -20,7 +20,7 @@ struct Card {
         idCounter += 1
         return idCounter
     }
-    
+
     init() {
         identifier = Card.getIdentifier()
     }

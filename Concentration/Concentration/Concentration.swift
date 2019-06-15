@@ -37,7 +37,7 @@ class Concentration {
             }
         }
         
-        if !cards.contains { !$0.isFaceUp } {
+        if !cards.contains { !$0.isMatched } {
             isWon = true
         }
     }
