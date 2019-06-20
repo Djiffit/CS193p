@@ -49,13 +49,13 @@ struct SetModel {
                 selectedCards += [card]
             }
         } else {
-            selectedCards.remove(at: selectedCards.index(of: card)!)
+            selectedCards.remove(at: selectedCards.firstIndex(of: card)!)
         }
     }
     
     mutating private func removeSet() {
         for card in selectedCards {
-            dealtCards.remove(at: dealtCards.index(of: card)!)
+            dealtCards.remove(at: dealtCards.firstIndex(of: card)!)
         }
         selectedCards = [Card]()
         deal()

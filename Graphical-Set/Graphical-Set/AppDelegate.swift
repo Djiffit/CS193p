@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Set
+//  Graphical-Set
 //
-//  Created by Konsta Kutvonen on 16/06/2019.
+//  Created by Kutvonen Konsta on 20/06/2019.
 //  Copyright © 2019 Don Wouge. All rights reserved.
 //
 

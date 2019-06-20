@@ -16,9 +16,6 @@ struct Card: Hashable {
     let color: CardColor
     let shading: Shading
     let identifier = Card.getIdentifier()
-    var hashValue: Int {
-        return identifier
-    }
     
     static func ==(lhs: Card, rhs: Card) -> Bool {
         return lhs.identifier == rhs.identifier

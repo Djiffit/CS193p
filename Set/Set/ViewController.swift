@@ -51,8 +51,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func selectCard(_ sender: UIButton) {
-        if String(describing: sender.attributedTitle(for: UIControlState.normal)!) != "" {
-            model.touch(model.dealtCards[cardList.index(of: sender)!])
+        if String(describing: sender.attributedTitle(for: UIControl.State.normal)!) != "" {
+            model.touch(model.dealtCards[cardList.firstIndex(of: sender)!])
             drawCards()
         }
         updateScore()
@@ -108,20 +108,20 @@ class ViewController: UIViewController {
             let cardUI = cardList[cardIndex]
             if cardIndex < model.dealtCards.count {
                 let card = model.dealtCards[cardIndex]
-                let strokeTextAttributes: [NSAttributedStringKey: Any] = [
+                let strokeTextAttributes: [NSAttributedString.Key: Any] = [
                     .strokeColor : getColor(for: card.color, with: Shading.solid),
                     .foregroundColor : getColor(for: card.color, with: card.shading),
                     .strokeWidth : -5.0,
                 ]
                 let astring = NSAttributedString(string: String(repeating: (card.type.rawValue), count: card.value), attributes: strokeTextAttributes)
                 
-                cardUI.setAttributedTitle(astring, for: UIControlState.normal)
+                cardUI.setAttributedTitle(astring, for: UIControl.State.normal)
                 cardUI.layer.borderWidth = 3
                 cardUI.layer.borderColor = getGNCColor(for: card.color)
                 cardUI.layer.cornerRadius = 8.0
                 cardUI.isHidden = false
                 cardUI.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-                cardUI.contentEdgeInsets = UIEdgeInsetsMake(15,15,15,15)
+                cardUI.contentEdgeInsets = UIEdgeInsets.init(top: 15,left: 15,bottom: 15,right: 15)
                 if model.selectedCards.contains(card) {
                     cardUI.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
                     if model.selectedCards.count == 3 {
@@ -131,9 +131,9 @@ class ViewController: UIViewController {
                 }
             } else {
                 cardUI.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-                cardUI.setTitle("", for: UIControlState.normal)
+                cardUI.setTitle("", for: UIControl.State.normal)
                 cardUI.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-                cardUI.setAttributedTitle(NSAttributedString(string: ""), for: UIControlState.normal)
+                cardUI.setAttributedTitle(NSAttributedString(string: ""), for: UIControl.State.normal)
             }
         }
     }
